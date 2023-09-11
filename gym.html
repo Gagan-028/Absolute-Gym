@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absolute GYM</title>
+
+    <style>
+        /* css reset  */
+        body {
+            margin: 0px;
+            padding: 0px;
+            background: url('images/12.jpg');
+            background-repeat: no-repeat;
+        }
+
+        .left {
+            display: inline-block;
+            position: absolute;
+            left: 8px;
+            top: 12px;
+            width: 100px;
+
+        }
+
+        .left img {
+            width: 100%;
+            margin: auto;
+        }
+
+        .left div {
+            text-align: center;
+            color: antiquewhite;
+        }
+
+        .mid {
+            display: block;
+            width: 50%;
+            margin: 13px 150px;
+            color: azure;
+
+        }
+
+        .right {
+
+            position: absolute;
+            display: inline-block;
+            right: 1%;
+            top: 25px;
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            padding: 25px 24px;
+        }
+
+        .navbar li a {
+            color: antiquewhite;
+            text-decoration: none;
+        }
+
+        .navbar li a:hover {
+            text-decoration: underline;
+            color: aqua;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: underline;
+            color: aqua;
+        }
+
+        .btn {
+            display: inline-block;
+            margin: 22px 4px;
+            border-radius: 7%;
+            padding: 4px 3px;
+            cursor: pointer;
+            background-color: black;
+            color: antiquewhite;
+        }
+
+        .btn:hover {
+            background-color: gray;
+            color: aqua;
+        }
+
+        .container {
+            border: 2px solid antiquewhite;
+            display: inline-block;
+            width: 50%;
+            margin: 50px 30px;
+            padding: 3% 3%;
+            border-radius: 10px;
+        }
+
+        .container h1 {
+            text-align: center;
+        }
+
+        .groupform {
+            display: block;
+            margin: 11px auto;
+            padding: 3px 4px;
+            text-align: center;
+            border-radius: 8px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="left">
+        <img src="images/log.jpg" alt="">
+        <div>ABSOLUTE GYM</div>
+    </div>
+    <div class="mid">
+        <ul class="navbar">
+            <li><a href="#" class="active">HOME</a></li>
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="#">CERTIFICATION</a></li>
+            <li><a href="#">SCADUAL</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+    </div>
+    <div class="right">
+        <button class="btn
+            ">CONTACT US</button>
+        <button class="btn">EMAIL US</button>
+    </div>
+    <div class="container">
+        <h1 style="color: antiquewhite;">JOIN THE BEST GYM NOW</h1>
+        <form action="noaction.php">
+            <div class="groupform">
+                <div class="search"><input type="text" name="name" id="name" placeholder="Full Name"></div>
+                <div class="groupform"></div>
+                <div class="search"><input type="text" name="mail" id="gmail" placeholder="E-mail Address"></div>
+                <div class="groupform"></div>
+                <div class="search"><input type="text" name="bodytype" id="name" placeholder="Address"></div>
+                <div class="groupform"></div>
+                <div class="search"><input type="text" name="gain" id="name" placeholder="Message"></div>
+                <button class="btn">REGISTRATION NOW</button>
+            </div>
+        </form>
+
+    </div>
+</body>
+
+</html>
